@@ -1,9 +1,11 @@
 @charset "utf-8";
 
 body {
+  margin: 0;
   background-image: url(img/imagem.jpeg);
   font-family: "Courier New", Courier, monospace;
   background-color: black;
+  box-sizing: border-box;
 }
 
 main {
@@ -16,23 +18,54 @@ p {
   background-color: rgb(0, 0, 0);
 }
 
-li {
-  display: inline-block;
-  padding: 5%;
-  margin-left: 13%;
+/* header/navbar */
+
+.menu {
+  margin-top: 5%;
+}
+nav.menu {
+  background-color: rgba(0, 0, 0, 0.834);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  height: 60px;
+  margin: 0;
 }
 
-a {
+.menu a {
   text-decoration: none;
   color: white;
-  font-size: 22px;
+  font-size: 25px;
 }
+
+a.edLink {
+  display: inline-block;
+  padding: 15px 30px 15px 30px;
+  letter-spacing: 3px;
+}
+a.edLink2 {
+  display: inline-block;
+  padding: 15px 30px 15px 30px;
+  letter-spacing: 3px;
+}
+a.edLink3 {
+  display: inline-block;
+  padding: 15px 30px 15px 3px;
+  letter-spacing: 3px;
+}
+
+/*inicio da pagina */
 
 .initial h1 {
   text-align: center;
   color: white;
   font-size: 50px;
+  margin: 0;
 }
+
+/* primeiro conteúdo*/
 
 .content {
   display: flex;
@@ -40,7 +73,7 @@ a {
 }
 
 .content img {
-  margin-right: 10px;
+  margin: 0px 10px 0 15px;
   display: block;
   border-radius: 10px;
   width: 30rem;
@@ -58,6 +91,8 @@ a {
   margin-left: 5%;
   max-width: 770px;
 }
+
+/* segundo conteúdo */
 
 .contentTwo {
   margin-top: 10%;
@@ -82,4 +117,31 @@ a {
   border-radius: 10px;
   width: 30rem;
   height: 30rem;
+}
+
+/* terceiro conteúdo */
+
+.contentThree {
+  margin-top: 10%;
+  display: flex;
+}
+
+.contentThree h3 {
+  color: white;
+  font-size: 30px;
+  margin-left: 37px;
+}
+
+.contentThree img {
+  margin: 0px 10px 0 15px;
+  display: block;
+  border-radius: 10px;
+  width: 30rem;
+  height: 30rem;
+}
+
+.contentThree p {
+  text-align: left;
+  margin-left: 5%;
+  max-width: 770px;
 }
